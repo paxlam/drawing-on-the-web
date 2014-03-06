@@ -58,6 +58,8 @@
 
 			#building {
 				fill: black;
+				transform: translateX(100px);
+				-webkit-transform: translateX(100px);
 			}
 
 			#building:hover {
@@ -76,6 +78,38 @@
 			#crosswalk:hover {
 				filter: url(#blur);
 			}
+			
+			.4seasons{
+				width: 500px;
+				height: 500px;
+			}
+			
+			img{
+				margin-top: 80px;
+				width: 100%;
+				height: 500px;
+			}
+			
+			.seasons_chinese{
+				transform: translateY(-700px) translateX(0px) scale(1, 1);
+				-webkit-transform: translateY(-700px) translateX(0px) scale(1, 1);
+			}
+			
+			#spring:hover{
+				opacity: .75; 
+			}
+			
+			#fall:hover{
+				opacity: .75;
+			}
+			
+			#winter:hover{
+				opacity: .75: 
+			}
+			
+			#summer:hover{
+				opacity: .75;
+			}
 
 		</style>
 	</head>
@@ -91,7 +125,8 @@
 						<feGaussianBlur in="SourceGraphic" stdDeviation="6" />
 					</filter>
 				</defs>
-
+				
+				<!--
 				<a xlink:href="http://www.w3.org/wiki/SVG_Links">
 				<g id="crosswalk">
 					
@@ -99,6 +134,7 @@
 					</image>
 				</g>
 				</a>
+				-->
 
 				<a xlink:href="http://i6.cims.nyu.edu/~jc3436/380/">
 
@@ -351,7 +387,7 @@
 				</g>
 				</a>
 
-				<g id="spring">
+				<!--<g id="spring">
 					<g>
 						<path d="M188.3018,59.1321h-20.1751c6.2076,7.0804,13.9675,12.8033,22.6968,16.2952c-2.1337,1.7456-4.8501,5.2375-6.2076,7.5652
 							c-5.3348-2.425-10.1842-5.5288-14.6462-9.3114v31.8142h-9.5055v-2.9098H128.456v3.2978h-9.0201V74.4571
@@ -364,9 +400,59 @@
 							 M160.4642,80.4707v-7.4685H128.456v7.4685H160.4642z M128.456,95.311h32.0082v-8.0506H128.456V95.311z M152.511,51.5663
 							c-1.0668-2.1337-2.1343-4.3647-3.1038-6.6924h-9.5054c-0.8728,2.231-1.843,4.4614-3.0071,6.6924H152.511z"/>
 					</g>
+				</g>-->
+				
+				<!--
+				<g id="spring">
+					<text transform="matrix(1 0 0 1 628 330)" fill="#BE1E2D" font-family="'AdobeMingStd-Light-B5pc-H'" font-size="150">春</text>
 				</g>
+				<g id="summer">
+					<text transform="matrix(1 0 0 1 429 200)" fill="#FFF200" font-family="'AdobeMingStd-Light-B5pc-H'" font-size="150">夏</text>
+				</g>
+				<g id="fall">
+					<text transform="matrix(1 0 0 1 213 217)" fill="#009444" font-family="'AdobeMingStd-Light-B5pc-H'" font-size="150">秋</text>
+				</g>
+				<g id="winter">
+					<text transform="matrix(1 0 0 1 41 342)" fill="#27AAE1" font-family="'AdobeMingStd-Light-B5pc-H'" font-size="150">冬</text>
+				</g>
+				-->
+				<div class="seasons_chinese">
 				</svg>
+				<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+					 viewBox="0 0 800 400" enable-background="new 0 0 800 400" xml:space="preserve">
+				
+				<a xlink:href="http://en.wiktionary.org/wiki/%E6%98%A5">
+				<g id="spring">
+					<text transform="matrix(1 0 0 1 628 330)" fill="#BE1E2D" font-family="'AdobeMingStd-Light-B5pc-H'" font-size="150">春</text>
+				</g>
+				</a>
+				
+				<a xlink:href="http://en.wiktionary.org/wiki/%E5%A4%8F">
+				<g id="summer">
+					<text transform="matrix(1 0 0 1 429 200)" fill="#FFF200" font-family="'AdobeMingStd-Light-B5pc-H'" font-size="150">夏</text>
+				</g>
+				</a>
+				
+				<a xlink:href="http://en.wiktionary.org/wiki/%E7%A7%8B">
+				<g id="fall">
+					<text transform="matrix(1 0 0 1 213 217)" fill="#009444" font-family="'AdobeMingStd-Light-B5pc-H'" font-size="150">秋</text>
+				</g>
+				</a>
+				
+				<a xlink:href="http://en.wiktionary.org/wiki/%E5%86%AC">
+				<g id="winter">
+					<text transform="matrix(1 0 0 1 41 342)" fill="#27AAE1" font-family="'AdobeMingStd-Light-B5pc-H'" font-size="150">冬</text>
+				</g>
+				</a>
+				</svg>
+				</div>
+
 			</div> <!-- close collage div -->
+			
+			<div class="4seasons">
+				<img src="four_seasons.jpg" width="1440" height="1210">
+			</div>
+			
 		</div> <!-- close container div -->
 	</body>
 
